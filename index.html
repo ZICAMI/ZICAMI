@@ -32,7 +32,7 @@
                 
                 
                 <button type = "button" class = "btn position-relative">
-                    
+                    <i class = "fa fa-search"></i>
                 </button>
             </div>
 
@@ -44,9 +44,10 @@
                 <ul class = "navbar-nav mx-auto text-center">
                     <li class = "nav-item px-2 py-2">
                         <a class = "nav-link text-uppercase text-dark" href = "#header">home</a>
+                        
                     </li>
                     <li class = "nav-item px-2 py-2">
-                        <a class = "nav-link text-uppercase text-dark" href = "#collection"> products</a>
+                        <a class = "nav-link text-uppercase text-dark" href = "#special"> products</a>
                     </li>
                     
                     <li class = "nav-item px-2 py-2">
@@ -66,14 +67,14 @@
     <header id = "header" class = "vh-100 carousel slide" data-bs-ride = "carousel" style = "padding-top: 104px;">
         <div class = "container h-100 d-flex align-items-center carousel-inner">
             <div class = "text-center carousel-item active">
-                <h2 class = "text-capitalize text-white">meilleure collection</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white">ZICAMI STORE</h1>
-                <a href = "#collection" class = "btn mt-3 text-uppercase">Acheter maintenant</a>
+                <h2 class = "text-capitalize text-white">best collection</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new arrivals</h1>
+                <a href = "#special" class = "btn mt-3 text-uppercase">shop now</a>
             </div>
             <div class = "text-center carousel-item">
-                <h2 class = "text-capitalize text-white">Meilleur prix et offre</h2>
-                <h1 class = "text-uppercase py-2 fw-bold text-white">NOUVEAU SITE WEB</h1>
-                <a href = "#collection" class = "btn mt-3 text-uppercase">Acheter maintenant</a>
+                <h2 class = "text-capitalize text-white">best price & offer</h2>
+                <h1 class = "text-uppercase py-2 fw-bold text-white">new Web site</h1>
+                <a href = "#special" class = "btn mt-3 text-uppercase">buy now</a>
             </div>
         </div>
 
@@ -87,177 +88,72 @@
     <!-- end of header -->
 
     <!-- collection -->
-    <section id = "collection" class = "py-5">
+    
+        
+    <!-- end of collection -->
+
+    <!-- special products -->
+    <section id = "special" class = "py-5">
         <div class = "container">
-            <div class = "title text-center">
-                <h2 class = "position-relative d-inline-block">PRODUCTS </h2>
+            <div class = "title text-center py-5">
+                <h2 class = "position-relative d-inline-block">PRODUCTS</h2>
             </div>
 
-            <div class = "row g-0">
-                <div class = "d-flex flex-wrap justify-content-center mt-5 filter-button-group">
-                    <button type = "button" class = "btn m-2 text-dark active-filter-btn" data-filter = "*">TOUT</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".best">BMW</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".feat">Mercedes</button>
-                    <button type = "button" class = "btn m-2 text-dark" data-filter = ".new">PLUS</button>
-                    
+            <div class = "special-list row g-0">
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/BM1.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">braclet BMW</p>
+                        <span class = "fw-bold d-block">1000DA</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="66799bccb0979"type="submit"alt="Buy Now with sellix.io">COMMANDE </a>
+                    </div>
                 </div>
 
-                <div class = "collection-list mt-4 row gx-0 gy-3">
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/BM1.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">braclet BMW</p>
-                                <span class = "fw-bold d-block">1000DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="66799bccb0979"type="submit"alt="Buy Now with sellix.io">COMMANDE </a>
-                            </div>
-                            <p class = "text-capitalize my-1"> </p>
-                            
-                            
-                        </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/BM2.jpg" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
                     </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">sac à dos BMW</p>
+                        <span class = "fw-bold d-block">3500DA</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="667f2824825b1"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
+                    </div>
+                </div>
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/mer2.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            <p class = "text-capitalize mt-3 mb-1">sac à dos mercedes  </p>
-                            <span class = "fw-bold d-block">3500DA</span>
-                            <a  class = "btn btn-primary mt-3"data-sellix-product="667f294a817e9"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                        </div>
-                        <div class = "text-center">
-                          
-                            
-                        </div>
+                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class = "special-img position-relative overflow-hidden">
+                        <img src = "images/mer2.png" class = "w-100">
+                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class = "fas fa-heart"></i>
+                        </span>
                     </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/VW.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">braclet volkswagen</p>
-                                <span class = "fw-bold d-block">1000DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="668b3d9576721"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                            </div>
-                            
-                           
-                        </div>
-                    </div>
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 new">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/F1.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">casquette AlphaTauri</p>
-                                <span class = "fw-bold d-block">5500DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="668bf08eac627"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                            </div>
-                            
-                           
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/BM2.jpg" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">sac à dos BMW</p>
-                                <span class = "fw-bold d-block">3500DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="667f2824825b1"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                            </div>
-        
-                            
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/MERC4.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">sac à dos mercedes MODDEL 2</p>
-                                <span class = "fw-bold d-block">3500DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="668bef7ff1555"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/MERC2.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">braclet Mercedes </p>
-                                <span class = "fw-bold d-block">1000DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="668b33bde4813"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-
                     
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/BM3.png" class = "w-100">
-                            
-                        </div>
-                        <div class = "text-center">
-                                                    
-                        </div>
-                        <div class = "text-center">
-                            <p class = "text-capitalize mt-3 mb-1">casquette BMW</p>
-                            <span class = "fw-bold d-block">5500DA</span>
-                            <a  class = "btn btn-primary mt-3"data-sellix-product="668b3183dbfbb"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                        </div>
+                    <div class = "text-center">
+                        <p class = "text-capitalize mt-3 mb-1">sac à dos mercedes  </p>
+                        <span class = "fw-bold d-block">3500DA</span>
+                        <a  class = "btn btn-primary mt-3"data-sellix-product="667f294a817e9"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
                     </div>
+                </div>
+                
+                
 
-                    <div class = "col-md-6 col-lg-4 col-xl-3 p-2 feat">
-                        <div class = "collection-img position-relative">
-                            <img src = "images/MERCcap.png" class = "w-100">
-                           
-                        </div>
-                        <div class = "text-center">
-                            <div class = "text-center">
-                                <p class = "text-capitalize mt-3 mb-1">casquette Mercedes</p>
-                                <span class = "fw-bold d-block">5500DA</span>
-                                <a  class = "btn btn-primary mt-3"data-sellix-product="668bf20a486ea"type="submit"alt="Buy Now with sellix.io">COMMANDE</a>
-                            </div>
-
-
-                        </div>
-                    </div>
+            
+                    
+                    
                 </div>
             </div>
         </div>
     </section>
-    <!-- end of collection -->
-
     <!-- special products -->
     
-    <!-- end of special products -->
-
-    
-
-    
-
     <!-- about us -->
     <section id = "about" class = "py-5">
         <div class = "container">
@@ -266,13 +162,16 @@
                     <div class = "title pt-3 pb-5">
                         <h2 class = "position-relative d-inline-block ms-4">ABOUT OUR STORE</h2>
                     </div>
-                    <p class = "lead text-muted">FOR BMW FANS</p>
-                    <p>Explorez notre collection en ligne  pour découvrir comment ZICAMI STORE peut vous aider à rendre chaque conduite plus agréable et distinctive avec des accessoires BMW authentiques. 
-</p>
-
+                    <p class = "lead text-muted">FOR BMW FANS </p>
+                    <p>Explorez notre collection en ligne  pour découvrir comment ZICAMI STORE peut vous aider à rendre chaque conduite plus agréable et distinctive avec des accessoires BMW authentiques.   </a></p>
+                    
+    
                 </div>
                 <div class = "col-lg-6 order-lg-0">
                     <img src = "images/BMW.svg.png" alt = "" class = "img-fluid">
+                </div>
+                
+
                 </div>
             </div>
         </div>
@@ -280,7 +179,8 @@
     <!-- end of about us -->
 
     <!-- popular -->
-    <
+   
+    
     <!-- end of popular2 -->
     
 
@@ -306,11 +206,8 @@
     <footer class = "bg-dark py-5">
         <div class = "container">
             <div class = "row text-white g-4">
-                <div class = "col-md-6 col-lg-3">
-                    
-                    <p class = "text-white text-muted mt-3">&#169; Abdellah Aiech. All rigths reserved</p>
-                    
-                    
+                <div class = "col-md-6 col-lg-3">                 
+                    <p class = "text-white text-muted mt-3">&#169; Abdellah Aiech . All rigths reserved</p>                          
                 </div>
                 
 
