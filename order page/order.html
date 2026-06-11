@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Your T-Shirt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+  <!-- ===== LEFT SIDE: PRODUCT PREVIEW ===== -->
+  <section class="product-preview">
+    <div class="product-image-wrapper">
+      <img id="productImage" src="images/black-shirt.png" alt="Classic T-Shirt" class="product-image">
+    </div>
+
+    <div class="product-info">
+      <h1 class="product-title">BRACLET BMW</h1>
+      <p class="product-description">
+        Premium 100% ORIGINAL 
+      </p>
+      <p class="product-price">1000 DA</p>
+
+      <!-- Color Swatches -->
+      <div class="color-options">
+        <span class="option-label">Color: <span id="selectedColorLabel">Black</span></span>
+        <div class="swatches">
+          <button
+            type="button"
+            class="swatch swatch-black active"
+            data-color="black"
+            data-image="images/black-shirt.png"
+            aria-label="Select Black color"
+            title="Black">
+          </button>
+          <button
+            type="button"
+            class="swatch swatch-white"
+            data-color="white"
+            data-image="images/white-shirt.png"
+            aria-label="Select White color"
+            title="White">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RIGHT SIDE: ORDER FORM ===== -->
+   <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="09b44a62-9044-4d25-932c-92fc7e4e31c8">
+  <section class="order-form-section">
+    <h2 class="form-title">Place Your Order</h2>
+    <p class="form-subtitle">Fill in your details below to complete the order.</p>
+
+    <form id="orderForm" novalidate>
+
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullName" name="fullName" placeholder="e.g. John Doe" autocomplete="name">
+        <span class="error-message" id="fullNameError">Please enter your full name.</span>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="form-group">
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 8900" autocomplete="tel">
+        <span class="error-message" id="phoneError">Please enter a valid phone number.</span>
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address <span class="required">*</span></label>
+        <textarea id="address" name="address" rows="3" placeholder="Street, City, State, ZIP Code" autocomplete="street-address"></textarea>
+        <span class="error-message" id="addressError">Please enter your delivery address.</span>
+      </div>
+
+      <!-- Size Selection -->
+      <div class="form-group">
+        <label>Size <span class="required">*</span></label>
+        <div class="size-options" id="sizeOptions">
+          <input type="radio" id="sizeS" name="size" value="S" class="size-radio">
+          <label for="sizeS" class="size-label">S</label>
+
+          <input type="radio" id="sizeM" name="size" value="M" class="size-radio">
+          <label for="sizeM" class="size-label">M</label>
+
+          <input type="radio" id="sizeL" name="size" value="L" class="size-radio">
+          <label for="sizeL" class="size-label">L</label>
+
+          <input type="radio" id="sizeXL" name="size" value="XL" class="size-radio">
+          <label for="sizeXL" class="size-label">XL</label>
+        </div>
+        <span class="error-message" id="sizeError">Please select a size.</span>
+      </div>
+
+      <!-- Color Selection -->
+      <div class="form-group">
+        <label>Color <span class="required">*</span></label>
+        <div class="form-color-options" id="formColorOptions">
+          <input type="radio" id="colorBlack" name="formColor" value="black" class="form-color-radio" checked>
+          <label for="colorBlack" class="form-color-label">
+            <span class="color-dot color-dot-black"></span> Black
+          </label>
+
+          <input type="radio" id="colorWhite" name="formColor" value="white" class="form-color-radio">
+          <label for="colorWhite" class="form-color-label">
+            <span class="color-dot color-dot-white"></span> White
+          </label>
+        </div>
+      </div>
+
+      <!-- Quantity Selector -->
+      <div class="form-group">
+        <label for="quantity">Quantity</label>
+        <div class="quantity-selector">
+          <button type="button" class="qty-btn" id="decreaseQty" aria-label="Decrease quantity">&minus;</button>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" max="99" readonly>
+          <button type="button" class="qty-btn" id="increaseQty" aria-label="Increase quantity">&plus;</button>
+        </div>
+      </div>
+
+      <!-- Order Notes -->
+      <div class="form-group">
+        <label for="notes">Order Notes <span class="optional">(optional)</span></label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Any special instructions for your order..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn" id="submitBtn">Submit Order</button>
+
+      <!-- Success Message -->
+      <div class="success-message" id="successMessage">
+        ✅ Your order has been placed successfully!
+      </div>
+
+    </form>
+  </section>
+
+</div>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
